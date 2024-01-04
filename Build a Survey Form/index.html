@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Cold</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div class="heading">
+            <h1 id="title">A Simple Christmas Form<h1>
+        </div>
+        <div class="sub">
+            <p id="description">This form is to analyze your Christmas days.<p>
+        </div>
+    </div>
+    <div class="big">
+        <form id="survey-form">
+            <div class="label">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="  Enter your name" required="">
+            </div>
+            <div class="label">
+                <label id="email-label">Email</label>
+                <input id="email" type="email" placeholder="  Enter your Email" required="">
+            </div>
+            <div class="label">
+                <label id="number-label">Age</label>
+                <input id="number" type="number" min="10" max="60" required="" placeholder="  Enter your Age">
+            </div>
+            <div class="label">
+                <label id="number-label">What was the best thing you did in the month of Christmas?</label>
+                <select id="dropdown">
+                    <option selected="" disabled="" value="">  Select one Element</option>
+                    <option>Celebrate</option>
+                    <option>Decorate</option>
+                    <option>Volunteer</option>
+                    <option>Reflect</option>
+                    <option>Travel</option>
+                    <option>Connect</option>
+                    <option>Others..</option>
+                </select>
+            </div>
+            <div class="label">
+                <label id="number-label">Was it your best Christmas yet?</label>
+                <label>
+                    <input class="input-radio" type="radio" name="user-recommend" value="yes">Yes..
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="user-recommend" value="not">Not at all
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="user-recommend" value="maybe">Maybe
+                </label> 
+            </div>
+            <div class="label">
+                <label id="number-label">List of things you did on Christmas</label>
+                <label>
+                    <input class="input-radio" type="checkbox" name="user-recommend" value="rest">Rested alot
+                </label>
+                <label>
+                    <input class="input-radio" type="checkbox" name="user-recommend" value="read">Read some books
+                </label>
+                <label>
+                    <input class="input-radio" type="checkbox" name="user-recommend" value="family" >Spend time with my Family
+                </label> 
+                <label>
+                    <input class="input-radio" type="checkbox" name="user-recommend" value="games">Played some games
+                </label> 
+            </div>
+            <div class="label">
+                <label id="number-label">Is there anything specific you would like me to discuss or address</label>
+                <textarea placeholder=" Enter your Comments Here"></textarea>
+             </div>    
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
